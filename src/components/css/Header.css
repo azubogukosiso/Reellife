@@ -1,0 +1,78 @@
+.main {
+  background: rgb(0, 0, 70);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+.brand {
+  letter-spacing: 0.22rem;
+  font-family: Comfortaa;
+}
+
+.search-container,
+.search-container-mobile {
+  width: 30%;
+  background: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+  .search-container {
+    width: 75%;
+    margin: 20px 0;
+  }
+}
+
+.fav-btn,
+.fav-btn-mobile {
+  background: rgb(0, 0, 70);
+  color: #fff;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.fav-btn:hover {
+  color: #fff;
+  background: rgb(0, 0, 100);
+}
+
+.fav-btn:active {
+  transform: scale(0.95);
+}
+
+.sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 100);
+  padding: 10px 0;
+}
+
+.custom-btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.89rem;
+  background: rgb(0, 0, 70);
+  transition: 0.2s;
+  border: none;
+}
+
+.custom-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgb(0, 0, 100);
+}
+
+.custom-btn:active {
+  transform: scale(0.95);
+}
